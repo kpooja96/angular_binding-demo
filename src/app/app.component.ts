@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'binding-demo';
+  title = "binding-demo";
+  rating = 3.2;
+  starWidth=this.rating * 75/5;
+  starColor = "blue";
+  customerName="Alex";
+
+  performAction():void {
+    alert("Button is clicked...");
+    this.title = "Binding-demo-in-angular";
+    alert(this.starWidth);
+  }
 }
